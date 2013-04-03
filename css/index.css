@@ -1,0 +1,974 @@
+@charset "utf-8";
+/* ================整体设定================ */
+
+html {font-size: 100%;}
+
+body {
+	background: #ebe7e4;
+	font-family: Tahoma;
+	font-size: 1em;
+}
+
+
+.line {						/*侧边栏分隔线*/
+	background: #dedede;
+	height: 1px;
+	width: 263px;
+	position: relative;
+	left: 0px;
+	top: 25px;
+
+}
+#line1 {top: 25px;}
+#line2 {top: -15px;}
+#line3 {top: 25px;}
+#line4 {top: 260px;position: absolute;}
+
+
+.button{				/*按钮设定*/
+	display:block;
+	z-index:999;
+	color: #FFF;
+	font-size: 0.8em;
+	border: 1px;
+	border-color: #3374a4;
+	-webkit-box-align: center;
+	text-align: center;
+	line-height: 26px;
+	background: #3a89c1;
+	width: 70px; 
+	height: 26px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.button[disabled='disabled']{
+	border:1px solid #454545;
+	background: #aaa;
+}
+
+a{					/*超链接文字动作设定*/
+	color: #aaa;
+}
+a:hover{
+	color: #3a89c1;
+}
+/*=======框架======*/
+
+
+.titleMain {
+	height: 95px;
+	width: 1003px;
+	position: relative;
+	top: 0px;
+	margin: 0px auto;
+}
+#bodyMain {
+	width: 1003px;
+	position: relative;
+	top: 110px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer{
+	position: relative;
+	top: 20px;
+	left: 0px;
+	height: 40px;
+	width: 989px;
+	margin: 0px auto;
+	font-size: 0.8em;
+	background: rgba(70, 70, 70, 0.8);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .5);
+	-moz-box-shadow:0 0 5px rgba(0, 0, 0, .5);
+	box-shadow:0 0 5px rgba(0, 0, 0, .5);
+
+}
+/*====一级导航====*/
+
+#navBar {
+	background: url(../images/nav/nav1_bg.png) repeat;
+	height: 95px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	-webkit-box-shadow:0 0 10px rgba(70, 70, 70, .8);
+	-moz-box-shadow:0 0 10px rgba(70, 70, 70, .8);
+	box-shadow:0 0 10px rgba(70, 70, 70, .8);
+}
+
+#logo {
+	background: url(../images/logo.png) no-repeat;
+	height: 19px;
+	width: 271px;
+	position: absolute;
+	top: 43px;
+	left: 15px;
+}
+
+.userInfo {
+	font: 0.8em "宋体";
+	color: #969696;
+	position: absolute;
+	top: 48px;
+	left: 910px;
+	text-decoration: none;
+    z-index: 999;
+}
+
+/*=======登录模块========*/
+
+#login {						/*登录框整体*/
+	background: #fff;
+	height: 328px;
+	width: 263px;
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .5);
+	-moz-box-shadow:0 0 5px rgba(0, 0, 0, .5);
+	box-shadow:0 0 5px rgba(0, 0, 0, .5);
+}
+
+
+#loginTitle {
+	position: relative;
+	top: 17px;
+	left: 45px;
+}
+
+#loginEmailImg {
+	background: url(../images/loginMail.png);
+	height: 32px;
+	width: 215px;
+	position: relative;
+	top: 35px;
+	left: 20px;
+}
+
+#loginPwImg {
+    background: url(../images/loginPwd.png);
+	height: 32px;
+	width: 215px;
+	position: relative;
+	top: 10px;
+	left: 20px;
+}
+
+#tbMail {
+	background: transparent;
+	border: none;
+	position: relative;
+	top: 5px;
+	left: 66px;
+	height: 28px;
+	width: 168px;
+	z-index: 999;
+	text-indent: 5px;
+
+}
+
+#tbPW {
+	background: transparent;
+	border: none;
+	position: relative;
+	top: -20px;
+	left: 66px;
+	height: 28px;
+	width: 168px;
+	z-index: 999;
+	text-indent: 5px;
+
+}
+
+#loginBtn {
+	position: relative;
+	top: -8px;
+	left: 165px;
+}
+
+#stayLogin{
+	position: relative;
+	top: -32px;
+	left: 15px;
+	height: 10px;
+}
+
+#keepLogin{
+	width:20px;
+	border:0px solid black;
+}
+
+#stayLogin label{
+	color: #c73232;
+	font-size: 0.8em;
+	position: relative;
+	top: 0px;
+	left: 9px;
+}
+
+#forgetPwd {
+	position: absolute;
+	top: 210px;
+	left: 20px;
+	font-size: 0.8em;
+	text-decoration: underline;
+}
+
+#suggest {
+	background: #5c5c5c;
+	position: absolute;
+	top: 278px;
+	left: 0px;
+	width: 263px;
+	height: 50px;
+	font-size: 0.9em;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+} 
+
+#suggest a 
+{
+    position: relative;
+    margin: auto;
+	color: #fff;
+	text-decoration: none;
+}
+#suggest a:hover {
+	color: #ecd04c;
+	text-decoration: none;
+}
+
+
+/*========更新模块=======*/
+
+#update {
+	position: absolute;
+	background: #fff;
+	top: 343px;
+	left: 5px;
+	width: 263px;
+	height: 200px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .5);
+	-moz-box-shadow:0 0 5px rgba(0, 0, 0, .5);
+	box-shadow:0 0 5px rgba(0, 0, 0, .5);
+
+}
+
+#updateTitle {
+	position: relative;
+	top: 22px;
+	left: 32px;
+
+}
+
+#update li {
+	font-size: 0.8em;
+	color: #216799;
+	position: relative;
+	top: 35px;
+	left: 30px;
+	line-height: 25px;
+}
+
+/*=====主要内容栏=====*/
+
+#rightPane {				/*框架*/
+	background: #fff;
+	position: relative;
+	width: 710px;
+	height: 543px;
+	top: 0px;
+	left: 283px;
+	color: #c73232;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .5);
+	-moz-box-shadow:0 0 5px rgba(0, 0, 0, .5);
+	box-shadow:0 0 5px rgba(0, 0, 0, .5);
+}
+
+
+/*========二级导航设定=========*/
+
+#subNavigation {
+	position: absolute;
+	background: #ebe8e4;
+	top: 0px;
+	left: 0px;
+	width: 710px;
+	height: 37px;
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+}
+
+/*======内容由此开始========*/
+
+#contentPane {				/*内容框*/
+	position: absolute;
+	width: 710px;
+	height: 506px;
+	top: 37px;
+	left: 0px;
+}
+
+
+#photo {
+	background: #ebe8e4;
+	width: 650px;
+	height: 300px;
+	position: relative;
+	top: 24px;
+	left: 25px;
+	font: 72px bold;
+	color: #fff;
+	line-height: 300px;
+	text-align: center;
+}
+
+#about {
+	position: relative;
+	top: 50px;
+	left: 25px;
+	width: 345px;
+}
+
+#about li {
+	font-size: 0.8em;
+	color: #454545;
+}
+
+#about h1 {
+	font-size: 1em;
+	font: bold;
+	color: #c73232;
+	position: relative;
+	line-height: 26px;
+}
+
+.icon{			/*装饰icon设定*/
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	top: 380px;
+}
+
+#icon1 { background: #c73232; left: 387px;}
+#icon2 { background: #3a89c1; left: 467px;}
+#icon3 { background: #ecd04c; left: 547px;}
+#icon4 { background: #59a231; left: 627px;}
+
+
+/*======底部信息=====*/
+
+.footer a{
+	font-family: Tahoma;
+	position: relative;
+	left: 550px;
+	line-height: 40px;
+}
+
+.footer a:hover{
+	color: #fff;
+}
+
+.footText {
+	color: #aaa;
+	position: relative;
+	font-family: Tahoma;
+	left: 50px;
+}
+
+/*======注册页面=====*/
+#RegPane {
+	width: 989px;
+	position: relative;
+	top: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	height: 500px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .5);
+	-moz-box-shadow:0 0 5px rgba(0, 0, 0, .5);
+	box-shadow:0 0 5px rgba(0, 0, 0, .5);
+}
+#footer2{
+	top: 125px;
+}
+
+/*======主要页面=====*/
+#iFrame 
+{
+    top: 50px;
+    left: 15px;
+    position: absolute;
+    width: 680px;
+    height: 450px;
+    border: none;
+}
+
+/*======二级导航设置======*/
+.SubNavAct
+{
+    height: 37px;
+    width: 80px;
+    top: 0px;
+    font-size: 0.9em;
+    background-color: #fff;
+    position: absolute;
+    line-height: 37px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+}
+
+
+.SubNavInAct
+{
+    height: 37px;
+    width: 80px;
+    top: 0px;
+    font-size: 0.9em;
+    background-color: transparent;
+    position: absolute;
+    line-height: 37px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+}
+
+#Selected
+{
+    left: 85px;
+}
+
+#CourseList
+{
+    left: 170px;
+}
+
+#HiddenSubNav1
+{
+    left: 255px;
+}
+
+#HiddenSubNav2
+{
+    width:110px;
+    left: 340px;
+}
+
+/*======表格样式======*/
+
+#TableTitle
+{
+    font-weight: bold;
+    font-size: 0.9em;
+    background: #ebe8e4;
+    line-height: 25px;
+    color: #595959;
+    border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	width: 540px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+    padding-left: 10px;
+}
+#mainframe
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    top: 15px;
+}
+.list
+{
+    border-style: none;
+    border-color: #fff;
+    border-width: 0px;
+    width: 550px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.listAlternating
+{
+    background: #FCF7F5;
+    font-size: 0.8em;
+    color: #595959;
+}
+.listItem
+{
+    font-size: 0.8em;
+    color: #595959;
+    text-align: left;
+}
+
+.SubNavText
+{
+    text-decoration: none;
+}
+
+/*======iframe滚动条设置======*/
+
+#iFrame {
+	overflow-x: auto;                          
+	overflow-y: auto;                        
+	scrollbar-face-color: #fff;               
+	scrollbar-hightlight-color: #fff;          
+	scrollbar-shadow-color: #fff;           
+	scrollbar-3dlight-color: #fff;        
+	scrollbar-arrow-color: #909090;      
+	scrollbar-track-color: #ffffff;     
+	scrollbar-darkshadow-color: #fff; 
+/*	border: 1px solid #dcdcdc;*/
+}
+/* webkit浏览器滚动条样式更改*/
+::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+    display: block;
+}
+#iFrame::-webkit-scrollbar {
+	width: 12px;
+}
+#iFrame::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#iFrame::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.8);
+  -webkit-box-shadow: inset 0 0 8px rgba(44,125,181,0.5); 
+}
+#iFrame::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(44,125,181,0.4); 
+}
+
+.ControlButton{				/*按钮设定*/
+	display:block;
+	z-index:999;
+	color: #FFF;
+	border: 1px;
+	border-color: #3374a4;
+	-webkit-box-align: center;
+	text-align: center;
+	line-height: 22px;
+	background: #3a89c1;
+	width: 42px; 
+	height: 22px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.DeleteButton{				/*按钮设定*/
+	display:block;
+	z-index:999;
+	color: #fff;
+	border: 1px;
+	border-color: #3374a4;
+	-webkit-box-align: center;
+	text-align: center;
+	line-height: 22px;
+	background: #c73232;
+	width: 42px; 
+	height: 22px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+
+.CourseEditLabel
+{
+    font-size: 0.9em;
+    color: #454545;
+    width:400px;
+    height: 32px;
+    position: absolute;
+    left: 150px;
+    line-height: 32px;
+}
+#div1
+{
+    top:80px;
+}
+#div2
+{
+    top:140px;
+}
+#div3
+{
+    top:200px;
+}
+#div4
+{
+    top:260px;
+}
+.CourseEditTBox
+{
+    width: 158px;
+    height: 30px;
+    text-indent: 5px;
+    color: #454545;
+    background: transparent;
+    border: 1px;
+    border-color: Black;
+    left: 76px;
+    top: 0px;
+    position: absolute;
+    z-index: 999;
+    line-height: 32px;
+}
+.textBoxBG
+{
+    top: 0px;
+    left: 75px;
+    width: 160px;
+    height: 32px;
+    position: absolute;
+    background-image: url("../images/textBoxBG.png");
+}
+.TipLabel
+{
+    font-size: 0.9em;
+    color: #aaa;
+    width: 180px;
+    position: absolute;
+    left: 260px;
+    top: 0px;
+    line-height: 32px;
+
+}
+
+#Label9
+{
+    left: 210px;
+    width: 200px;
+}
+
+#AddCourse
+{
+    top:375px;
+    left:220px;
+    position: absolute;
+    background: #59a231;
+}
+
+#Back
+{
+    top:375px;
+    left:310px;
+    position: absolute;
+}
+
+
+#RegSubmit
+{
+    background: #59a231;
+    border-color: #357114;
+    font-size: 1.0em;
+    font-weight: bold;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    top:365px;
+    left:157px;
+    position: absolute;
+    border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.CourseEditLabelReg
+{
+    font-size: 0.9em;
+    color: #454545;
+    width:400px;
+    height: 32px;
+    position: absolute;
+    left: 80px;
+    line-height: 32px;
+}
+#div1-1
+{
+    top:120px;
+}
+#div2-1
+{
+    top:180px;
+}
+#div3-1
+{
+    top:240px;
+}
+#div4-1
+{
+    top: 300px;
+}
+#RegDropDownList
+{
+    left: 75px;
+    top: 5px;
+    position: absolute;
+}
+
+
+/*=========注册页布局======*/
+
+.RegLine {						/*分隔线*/
+	background: #dedede;
+	height: 1px;
+	width: 989px;
+	position: absolute;
+	left: 0px;
+    top: 420px;
+}
+#RegLine1 {
+	top: 80px;
+	position: absolute;
+}
+
+#RegBack
+{
+    text-decoration: underline;
+    font-size: 0.8em;
+    top: 50px;
+    right: 50px;
+    position: absolute;
+}
+#AdminRegText
+{
+    top: 150px;
+    right: 50px;
+    position: absolute;
+    width: 420px;
+    height: 170px;
+    overflow: hidden;
+    
+}
+#AdminRegLabel
+{
+    top: 125px;
+    left: 519px;
+    position: absolute;
+    font-size: 0.9em;
+    color: #454545;
+}
+
+#AdminRegSubmit
+{
+    background: #59a231;
+    border-color: #357114;
+    font-size: 1.0em;
+    font-weight: bold;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    top:350px;
+    right: 110px;
+    position: absolute;
+    border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+/*======个人资料显示======*/
+.AvatarDisplay
+{
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color:Black;
+    border-color: Green;
+    border-width: 5px;
+
+}
+.Avatar
+{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+#Name
+{
+    top: 20px;
+    left: 120px;
+    position: absolute;
+    font-size: 1 em;
+    font-weight: bold;
+    color: #c73232;
+}
+#IfAdminLabel
+{
+    top: 20px;
+    left: 185px;
+    position: absolute;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #454545;
+}
+#EditInfo
+{
+    top: 50px;
+    left: 120px;
+    font-size: 0.8em;
+    position: absolute;
+    color: #c73232;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+}
+#PSInfoEdit
+{
+    top: 5px;
+    left: 0px;
+    position: absolute;
+        text-decoration: none;
+}
+#DeleteUser
+{
+    top: 30px;
+    left: 0px;
+    position: absolute;
+        text-decoration: none;
+}
+#PSInfo {						/*个人信息整体*/
+	height: 100px;
+	width: 263px;
+	position: absolute;
+	top: 12px;
+	left: 0px;
+}
+#PSInfoTitle
+{
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 7px;
+    width: 263px;
+    background-color: #454545;
+    border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+}
+#CourseStatic
+{
+    top: 137px;
+    left: 15px;
+    position: absolute;
+    height: 100px;
+    width: 233px;
+    background-color: #f2eeee;
+
+}
+#PSInfoLine1
+{
+    top: 136px;
+    left: 15px;
+    width: 233px;
+    position: absolute;
+}
+#PSInfoLine2
+{
+    top: 237px;
+    left: 15px;
+    width: 233px;
+    position: absolute;
+}
+#PSInfoLine3
+{
+    top: 136px;
+    left: 14px;
+    width: 1px;
+    height: 102px;
+    position: absolute;
+}
+#PSInfoLine4
+{
+    top: 136px;
+    left: 248px;
+    width: 1px;
+    height: 102px;
+    position: absolute;
+}
+#MaxCourseNum
+{
+    top: 15px;
+    left: 40px;
+    position: absolute;
+    color: #59a231;
+    font-size: 2.5em;
+    font-weight: bold;
+    
+}
+#SelectedNum
+{
+    top: 15px;
+    left: 165px;
+    position: absolute;
+    color: #3a89c1;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+#MCNLabel
+{
+    font-size: 0.8em;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    color: #666;
+}
+#SNLabel
+{
+    font-size: 0.8em;
+    top: 70px;
+    left: 150px;
+    position: absolute;
+    color: #666;
+
+}
+#booktitle
+{
+    background: url("../images/booktitle.jpg") no-repeat;
+    top: 120px;
+    left: 550px;
+    position: absolute;
+    width: 328px;
+    height: 251px;
+}
